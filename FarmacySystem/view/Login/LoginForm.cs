@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using FarmacySystem.controller;
+using FarmacySystem.view.Farmaceutico;
 
 namespace FarmacySystem.view
 {
@@ -137,7 +138,7 @@ namespace FarmacySystem.view
                     Form telaUsuario = role switch
                 {
                     "gerente" => new ManagerForm(),
-                    "farmaceutico" => new FarmaceuticForm(),
+                    "farmaceutico" => new FarmaceuticoForm(),
                     _ => new SalesmanForm()
                 };
 
