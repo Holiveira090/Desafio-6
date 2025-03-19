@@ -23,7 +23,7 @@ namespace FarmacySystem.view
             //Slk leandro mexe em nada mano
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new CadastroUForm());
         }
     }
 }
