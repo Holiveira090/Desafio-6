@@ -143,6 +143,4 @@ namespace FarmacySystem.view
         private void BtnSupplier_Click(object sender, EventArgs e)
         {
             mainForm.TrocarTela(new FormCadastro(mainForm));
-        }
-    }
-}
+    }    }    } 

@@ -51,7 +51,7 @@ namespace FarmacySystem.view
 
         private void MostrarTelaLogin()
         {
-            TrocarTela(new FarmaceuticoForm());  // Passamos o próprio MainForm para o LoginForm
+            TrocarTela(new LoginForm(this));  // Passamos o próprio MainForm para o LoginForm
         }
     }
 }

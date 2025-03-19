@@ -5,8 +5,9 @@
     using FarmacySystem.model;
     using System.Collections.Generic;
     using System.Linq;
+    using FarmacySystem.data;
 
-    namespace FarmacySystem.view
+    namespace FarmacySystem
 {
     public class FarmaceuticoForm : Form
 
@@ -281,11 +282,11 @@
                 MessageBox.Show("Erro de conversão de dados. Verifique os valores inseridos nos campos numéricos.\n" + fe.Message,
                     "Erro de Formato", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            catch (DbUpdateException dbEx)
-            {
-                MessageBox.Show("Erro ao salvar no banco de dados. Verifique se os dados são válidos.\n" + dbEx.Message,
-                    "Erro de Banco de Dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            // catch (DbUpdateException dbEx)
+            // {
+            //     MessageBox.Show("Erro ao salvar no banco de dados. Verifique se os dados são válidos.\n" + dbEx.Message,
+            //         "Erro de Banco de Dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            // }
             catch (NullReferenceException nre)
             {
                 MessageBox.Show("Erro interno: Um campo obrigatório pode estar vazio.\n" + nre.Message,
